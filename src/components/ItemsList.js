@@ -14,7 +14,7 @@ export default function ItemsList(props) {
           key={item.id}
         >
           {/* 👉 STEP 6 - Link starts, navigates us from <current url> to <current url>/<id of the item> */}
-          <Link to='/items-list/0'>
+          <Link to={`/items-list/${item.id}`}>
             <img
               className='items-list-image'
               src={item.imageUrl}

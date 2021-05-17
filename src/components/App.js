@@ -42,7 +42,7 @@ export default function App(props) {
         // match={props.match}
         items={stock} />
       }}/>
-      <Route exact path="/items-list/0">
+      <Route path="/items-list/:itemID">
         <Item items={stock} />
       </Route>
     </div>
