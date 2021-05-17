@@ -36,9 +36,10 @@ export default function App(props) {
       <Route path='/' component={Home} />
       <Route path="" render={props => {
         return <ItemsList 
-        history={props.history} 
-        location={props.location}
-        match={props.match}
+        {...props}
+        // history={props.history} 
+        // location={props.location}
+        // match={props.match}
         items={stock} />
       }}/>
     </div>
